@@ -336,13 +336,13 @@
                         <p class="text-lg text-gray-600 mb-6">Download our app to discover designers, create custom requests, and track your orders on the go.</p>
                         
                         <div class="flex space-x-4">
-                            <button class="bg-black text-white px-6 py-3 rounded-xl font-medium flex items-center voluminous-shadow hover:transform hover:-translate-y-1 transition-transform">
+                            <a href="https://apps.apple.com/us/app/tuwanx-a-fashion-marketplace/id6786686734" target="_blank" rel="noopener" class="bg-black text-white px-6 py-3 rounded-xl font-medium flex items-center voluminous-shadow hover:transform hover:-translate-y-1 transition-transform">
                                 <i class="fab fa-apple text-2xl mr-2"></i>
                                 <div class="text-left">
                                     <div class="text-xs">Download on the</div>
                                     <div class="text-lg">App Store</div>
                                 </div>
-                            </button>
+                            </a>
                             <a href="https://play.google.com/store/apps/details?id=com.tx.Tuwanx&pcampaignid=web_share" target="_blank" rel="noopener" class="bg-black text-white px-6 py-3 rounded-xl font-medium flex items-center voluminous-shadow hover:transform hover:-translate-y-1 transition-transform">
                                 <i class="fab fa-google-play text-xl mr-2"></i>
                                 <div class="text-left">
