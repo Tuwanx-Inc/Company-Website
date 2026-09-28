@@ -62,8 +62,8 @@
         
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10">
             <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Custom Fashion, <span class="text-gradient">Made for You</span></h1>
-                <p class="text-lg text-gray-600 mb-8">Connect with talented fashion designers to create unique, personalized clothing for your special moments.</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Buy, Sell, Design &amp; <span class="text-gradient">Swap Fashion</span></h1>
+                <p class="text-lg text-gray-600 mb-8">Tuwanx is the complete fashion marketplace &mdash; create custom pieces, sell your products, shop pre-loved styles, swap with the community, and give back through charity.</p>
                 <div class="flex space-x-4">
                     <a href="#download" class="btn-gold px-6 py-3 rounded-lg font-semibold text-lg inline-block text-center">Find Designers</a>
                     <a href="{{ route('about') }}" class="btn-outline px-6 py-3 rounded-lg font-semibold text-lg inline-block text-center">Learn More</a>
