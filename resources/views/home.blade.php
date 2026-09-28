@@ -232,6 +232,23 @@
                 </div>
             </div>
 
+            <!-- 5. Trade Showcase -->
+            <div class="offer-row fade-in">
+                <div class="offer-media floating-element">
+                    <img src="{{ asset('assets/swap-2.jpg') }}" alt="Propose luxury trades and exchange fashion on Tuwanx">
+                </div>
+                <div class="offer-body">
+                    <span class="offer-label">Trade</span>
+                    <h3 class="offer-title">Elevate, Exchange, Repeat</h3>
+                    <p class="offer-desc">Showcase your best pieces and propose trades with the community. Discover luxury trade showcases and exchange directly with other members.</p>
+                    <ul class="offer-points">
+                        <li><i class="fas fa-check"></i> Showcase items with estimated value</li>
+                        <li><i class="fas fa-check"></i> Propose and negotiate trades</li>
+                        <li><i class="fas fa-check"></i> Build your trade reputation</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- OFFER_BANDS -->
         </div>
     </section>
