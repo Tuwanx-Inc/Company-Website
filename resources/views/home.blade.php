@@ -47,6 +47,7 @@
     <!-- Section Indicator -->
     <div class="section-indicator hidden md:block">
         <div class="indicator-dot active" data-section="home"></div>
+        <div class="indicator-dot" data-section="marketplace"></div>
         <div class="indicator-dot" data-section="how-it-works"></div>
         <div class="indicator-dot" data-section="designers"></div>
         <div class="indicator-dot" data-section="features"></div>
