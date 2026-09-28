@@ -114,20 +114,23 @@
                             <div class="flex flex-col items-center justify-center text-white w-1/3 z-20 pt-4 md:pt-0">
                                 <i class="fab fa-apple text-2xl md:text-5xl mb-1 md:mb-3"></i>
                                 <span class="font-bold text-xs md:text-xl text-center leading-tight mb-1">App Store</span>
-                                <span class="text-lg md:text-3xl font-bold" id="ios-counter">0</span>
+                                <span class="text-lg md:text-3xl font-bold" id="ios-counter"
+                                      data-target="{{ $installs['ios'] ?? 0 }}">{{ number_format($installs['ios'] ?? 0) }}</span>
                             </div>
 
                             <!-- Total (Center) -->
                             <div class="flex flex-col items-center justify-center w-1/3 z-30 pt-4 md:pt-0">
                                 <p class="text-gray-500 text-[8px] md:text-sm uppercase tracking-wider font-bold mb-0.5 md:mb-1">Total</p>
-                                <span class="text-xl md:text-5xl font-bold text-tuwanx-black" id="download-counter">200+</span>
+                                <span class="text-xl md:text-5xl font-bold text-tuwanx-black" id="download-counter"
+                                      data-target="{{ $installs['total'] ?? 0 }}">{{ \App\Services\TuwanxStats::friendly($installs['total'] ?? 0) }}</span>
                             </div>
 
                             <!-- Play Store (Right) -->
                             <div class="flex flex-col items-center justify-center text-tuwanx-black w-1/3 z-20 pt-4 md:pt-0">
                                 <i class="fab fa-google-play text-xl md:text-4xl mb-1 md:mb-3"></i>
                                 <span class="font-bold text-xs md:text-xl text-center leading-tight mb-1">Play Store</span>
-                                <span class="text-lg md:text-3xl font-bold" id="android-counter">0</span>
+                                <span class="text-lg md:text-3xl font-bold" id="android-counter"
+                                      data-target="{{ $installs['android'] ?? 0 }}">{{ number_format($installs['android'] ?? 0) }}</span>
                             </div>
                         </div>
                     </div>
@@ -533,27 +536,25 @@
             });
 
             // Download Counter Logic
+            //
+            // These numbers are REAL. They come from the Tuwanx API (see
+            // App\Services\TuwanxStats), are rendered server-side into the
+            // data-target attributes below, and refresh every 15 minutes.
+            //
+            // This previously simulated growth by adding 200 downloads per day
+            // since a fixed date and splitting them 60/40 - the figures shown
+            // had no connection to actual installs. Do not reintroduce that:
+            // the counter must only ever display measured data.
             const counterElement = document.getElementById('download-counter');
             if (counterElement) {
-                // Set start date to February 6, 2026 (Today's date from environment context is 2026-02-06)
-                // Using a fixed date ensures consistent counting for all users
-                const startDate = new Date('2026-02-06T00:00:00');
-                const baseCount = 200;
-                const dailyIncrease = 200; // add 200 users per day
-                const maxCount = 1000000; // cap counter at 1 Million+
+                const readTarget = el => {
+                    const v = parseInt((el && el.dataset.target) || '0', 10);
+                    return isNaN(v) ? 0 : v;
+                };
 
-                const now = new Date();
-                const timeDiff = now - startDate;
-                // Calculate days passed (floored to keep it stable per day)
-                let daysPassed = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-                daysPassed = Math.max(0, daysPassed); // Ensure no negative days
-
-                // Linear growth: base + 200 users per day, capped at 1 Million+
-                const currentCount = Math.min(maxCount, baseCount + dailyIncrease * daysPassed);
-
-                // Calculate split (60% Android [3/5], 40% iOS)
-                const androidCount = Math.round(currentCount * 0.6);
-                const iosCount = currentCount - androidCount;
+                const currentCount = readTarget(counterElement);
+                const androidCount = readTarget(document.getElementById('android-counter'));
+                const iosCount     = readTarget(document.getElementById('ios-counter'));
 
                 // Animate the number counting up
                 const duration = 2000; // 2 seconds
@@ -577,8 +578,13 @@
                         return Math.floor(num / 1000) + 'K+';
                     }
 
-                    return num + '+';
+                    // Exact below 1,000 - "892+" would imply more than we have.
+                    return String(num);
                 }
+
+                // Store columns show the precise count (with separators); only
+                // the centre Total uses the rounded "1K+" headline.
+                const exact = n => Number(n).toLocaleString('en-US');
 
                 let frame = 0;
                 const animateCount = () => {
@@ -591,18 +597,18 @@
                     }
 
                     if (iosCounterEl) {
-                        iosCounterEl.textContent = formatNumber(Math.round(iosCount * progress));
+                        iosCounterEl.textContent = exact(Math.round(iosCount * progress));
                     }
                     if (androidCounterEl) {
-                        androidCounterEl.textContent = formatNumber(Math.round(androidCount * progress));
+                        androidCounterEl.textContent = exact(Math.round(androidCount * progress));
                     }
                     
                     if (frame < totalFrames) {
                         requestAnimationFrame(animateCount);
                     } else {
                        counterElement.textContent = formatNumber(currentCount);
-                        if (iosCounterEl) iosCounterEl.textContent = formatNumber(iosCount);
-                        if (androidCounterEl) androidCounterEl.textContent = formatNumber(androidCount);
+                        if (iosCounterEl) iosCounterEl.textContent = exact(iosCount);
+                        if (androidCounterEl) androidCounterEl.textContent = exact(androidCount);
                     }
                 };
                 

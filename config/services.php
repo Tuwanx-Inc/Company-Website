@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    // Live install numbers pulled from the Tuwanx API for the homepage.
+    // The token is read-only and never reaches the browser.
+    'tuwanx_api' => [
+        'url'   => env('TUWANX_API_URL', 'https://api.tuwanx.com'),
+        'token' => env('TUWANX_ANALYTICS_TOKEN', ''),
+    ],
+
 ];
