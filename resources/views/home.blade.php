@@ -181,6 +181,23 @@
                 </div>
             </div>
 
+            <!-- 2. Sell -->
+            <div class="offer-row reverse fade-in">
+                <div class="offer-media floating-element">
+                    <img src="{{ asset('assets/sell-fashion-products.jpg') }}" alt="List, sell and earn from fashion products on Tuwanx">
+                </div>
+                <div class="offer-body">
+                    <span class="offer-label">Sell</span>
+                    <h3 class="offer-title">List, Sell &amp; Earn</h3>
+                    <p class="offer-desc">Turn your wardrobe or your label into income. List fashion products in minutes and reach buyers across Nigeria and beyond.</p>
+                    <ul class="offer-points">
+                        <li><i class="fas fa-check"></i> Fast listing with photos and pricing</li>
+                        <li><i class="fas fa-check"></i> Manage orders and offers in-app</li>
+                        <li><i class="fas fa-check"></i> Get paid securely</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- OFFER_BANDS -->
         </div>
     </section>
