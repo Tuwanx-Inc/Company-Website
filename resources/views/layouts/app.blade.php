@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Tuwanx - Custom Fashion Marketplace')</title>
+    <title>@yield('title', 'Tuwanx - The Complete Fashion Marketplace')</title>
     <!-- Add favicon -->
     <link rel="icon" type="image/jpg" href="{{ asset('assets/favicon.jpg') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
