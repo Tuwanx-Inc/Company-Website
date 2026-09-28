@@ -308,6 +308,7 @@
                             <a href="https://www.facebook.com/profile.php?id=61583297275195" target="_blank" rel="noopener" aria-label="Tuwanx on Facebook" class="text-gray-700 hover:text-black transition"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/tuwanxinc/" target="_blank" rel="noopener" aria-label="Tuwanx on Instagram" class="text-gray-700 hover:text-black transition"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/tuwanx/" target="_blank" rel="noopener" aria-label="Tuwanx on LinkedIn" class="text-gray-700 hover:text-black transition"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.tiktok.com/@tuwanxinc" target="_blank" rel="noopener" aria-label="Tuwanx on TikTok" class="text-gray-700 hover:text-black transition"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
