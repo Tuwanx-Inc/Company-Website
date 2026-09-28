@@ -29,6 +29,7 @@
     <div class="container mx-auto px-6 py-8 mt-16">
         <div class="flex flex-col space-y-8">
             <a href="#home" class="text-2xl font-semibold py-2 border-b border-gray-100">Home</a>
+            <a href="#marketplace" class="text-2xl font-semibold py-2 border-b border-gray-100">Explore</a>
             <a href="#how-it-works" class="text-2xl font-semibold py-2 border-b border-gray-100">How It Works</a>
             <a href="#designers" class="text-2xl font-semibold py-2 border-b border-gray-100">Designers</a>
             <a href="#features" class="text-2xl font-semibold py-2 border-b border-gray-100">Features</a>
