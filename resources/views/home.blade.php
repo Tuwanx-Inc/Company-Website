@@ -198,6 +198,23 @@
                 </div>
             </div>
 
+            <!-- 3. Used / Thrift -->
+            <div class="offer-row fade-in">
+                <div class="offer-media floating-element">
+                    <img src="{{ asset('assets/used-fashion.jpg') }}" alt="Thrift and shop pre-loved used fashion on Tuwanx">
+                </div>
+                <div class="offer-body">
+                    <span class="offer-label">Thrift</span>
+                    <h3 class="offer-title">Thrift, Relove, Repeat</h3>
+                    <p class="offer-desc">Give fashion a second life. Shop quality pre-loved and vintage pieces for less, or sell the styles you have outgrown.</p>
+                    <ul class="offer-points">
+                        <li><i class="fas fa-check"></i> Curated pre-loved and vintage finds</li>
+                        <li><i class="fas fa-check"></i> Condition rating on every item</li>
+                        <li><i class="fas fa-check"></i> Make an offer or chat with sellers</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- OFFER_BANDS -->
         </div>
     </section>
