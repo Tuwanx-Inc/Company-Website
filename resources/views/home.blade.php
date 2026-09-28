@@ -164,6 +164,23 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 fade-in" style="color:#ffffff;">More Than <span style="color:#D4AF37;">Custom Fashion</span></h2>
             <p class="text-lg text-center mb-20 max-w-2xl mx-auto fade-in" style="color:#9ca3af;">Tuwanx is a complete fashion marketplace. Design custom pieces, sell your products, shop pre-loved styles, swap with others, and give back &mdash; all in one app.</p>
 
+            <!-- 1. Custom Design -->
+            <div class="offer-row fade-in">
+                <div class="offer-media floating-element">
+                    <img src="{{ asset('assets/design-create-wear.jpg') }}" alt="Design, create and wear custom fashion on Tuwanx">
+                </div>
+                <div class="offer-body">
+                    <span class="offer-label">Custom Design</span>
+                    <h3 class="offer-title">Design, Create &amp; Wear</h3>
+                    <p class="offer-desc">Bring your vision to life. Connect with talented designers to create custom, made-to-order pieces tailored to your exact style and measurements.</p>
+                    <ul class="offer-points">
+                        <li><i class="fas fa-check"></i> Personalised, made-to-order fashion</li>
+                        <li><i class="fas fa-check"></i> Chat directly with your designer</li>
+                        <li><i class="fas fa-check"></i> Secure, milestone-based payments</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- OFFER_BANDS -->
         </div>
     </section>
