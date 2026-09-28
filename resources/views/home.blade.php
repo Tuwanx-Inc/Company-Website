@@ -136,6 +136,38 @@
         </div>
     </section>
 
+    <!-- Section 1.75: Marketplace / Explore -->
+    <style>
+        #marketplace { background: #0b0b0d; }
+        #marketplace .offer-row { display: flex; flex-direction: column; align-items: center; gap: 2.5rem; margin-bottom: 6rem; }
+        #marketplace .offer-row:last-child { margin-bottom: 0; }
+        #marketplace .offer-media { flex: 0 0 auto; width: 310px; max-width: 82%; }
+        #marketplace .offer-media img { width: 100%; height: auto; display: block; border-radius: 1.5rem; box-shadow: 0 30px 55px -15px rgba(0, 0, 0, 0.75); }
+        #marketplace .offer-body { flex: 1; max-width: 560px; }
+        #marketplace .offer-label { display: inline-block; color: #D4AF37; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+        #marketplace .offer-title { color: #ffffff; font-weight: 700; font-size: 1.9rem; line-height: 1.15; margin: 0.5rem 0 1rem; }
+        #marketplace .offer-desc { color: #c7c9ce; font-size: 1.05rem; line-height: 1.65; margin-bottom: 1.4rem; }
+        #marketplace .offer-points { list-style: none; padding: 0; margin: 0; }
+        #marketplace .offer-points li { color: #9ca3af; font-size: 0.98rem; margin-bottom: 0.7rem; display: flex; align-items: flex-start; }
+        #marketplace .offer-points li i { color: #D4AF37; margin-right: 0.7rem; margin-top: 0.28rem; font-size: 0.82rem; }
+        @media (min-width: 768px) {
+            #marketplace .offer-row { flex-direction: row; gap: 5rem; }
+            #marketplace .offer-row.reverse { flex-direction: row-reverse; }
+            #marketplace .offer-title { font-size: 2.2rem; }
+        }
+    </style>
+    <section id="marketplace" class="section relative overflow-hidden">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-tuwanx-gold/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-tuwanx-gold/5 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 fade-in" style="color:#ffffff;">More Than <span style="color:#D4AF37;">Custom Fashion</span></h2>
+            <p class="text-lg text-center mb-20 max-w-2xl mx-auto fade-in" style="color:#9ca3af;">Tuwanx is a complete fashion marketplace. Design custom pieces, sell your products, shop pre-loved styles, swap with others, and give back &mdash; all in one app.</p>
+
+            <!-- OFFER_BANDS -->
+        </div>
+    </section>
+
     <!-- Section 2: How It Works -->
     <section id="how-it-works" class="section bg-white relative overflow-hidden">
         <div class="absolute top-20 -left-20 w-60 h-60 bg-tuwanx-gold/5 rounded-full blur-3xl"></div>
