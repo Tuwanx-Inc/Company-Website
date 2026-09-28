@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tuwanx - Custom Fashion Marketplace')
+@section('title', 'Tuwanx - The Complete Fashion Marketplace')
 
 @section('progress-bar')
     <!-- Progress Bar -->
