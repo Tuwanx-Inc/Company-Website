@@ -12,6 +12,7 @@
 @section('navigation')
     <div class="hidden md:flex space-x-8">
         <a href="#home" class="nav-link active-nav">Home</a>
+        <a href="#marketplace" class="nav-link">Explore</a>
         <a href="#how-it-works" class="nav-link">How It Works</a>
         <a href="#designers" class="nav-link">Designers</a>
         <a href="#features" class="nav-link">Features</a>
