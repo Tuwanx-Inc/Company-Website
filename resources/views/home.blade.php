@@ -215,6 +215,23 @@
                 </div>
             </div>
 
+            <!-- 4. Swap -->
+            <div class="offer-row reverse fade-in">
+                <div class="offer-media floating-element">
+                    <img src="{{ asset('assets/swap.jpg') }}" alt="Swap and trade fashion with the Tuwanx community">
+                </div>
+                <div class="offer-body">
+                    <span class="offer-label">Swap</span>
+                    <h3 class="offer-title">Swap &amp; Trade</h3>
+                    <p class="offer-desc">Refresh your wardrobe without spending. Exchange the pieces you no longer wear for styles you love, matched with trusted trade partners.</p>
+                    <ul class="offer-points">
+                        <li><i class="fas fa-check"></i> Smart trade matches</li>
+                        <li><i class="fas fa-check"></i> No cash needed</li>
+                        <li><i class="fas fa-check"></i> Rated, trusted trade partners</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- OFFER_BANDS -->
         </div>
     </section>
