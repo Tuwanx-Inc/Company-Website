@@ -285,7 +285,7 @@
                 <div class="mb-8 md:mb-0">
                     <!-- Footer logo instead of text -->
                     <img src="{{ asset('assets/logo-footer.png') }}" alt="Tuwanx Logo" class="h-10 mb-4">
-                    <p class="text-gray-700 max-w-md">Connecting fashion designers with customers for custom clothing experiences.</p>
+                    <p class="text-gray-700 max-w-md">The complete fashion marketplace &mdash; buy, sell, design, swap, and donate, all in one app.</p>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                     <div>
