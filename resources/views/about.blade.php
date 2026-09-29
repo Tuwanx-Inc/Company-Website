@@ -302,6 +302,8 @@
 @endsection
 
 @section('content')
+    <h1 class="sr-only">About Tuwanx</h1>
+
     <!-- Mission & Vision Section -->
     <section class="section-padding bg-white pt-28 md:pt-32" id="mission">
         <div class="container mx-auto px-4 xs:px-6">
