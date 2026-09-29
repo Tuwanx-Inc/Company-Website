@@ -403,10 +403,10 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- Stats Section (live from the Tuwanx API — real, measured figures only) -->
     <section class="section-padding gradient-bg relative overflow-hidden">
         <div class="absolute -bottom-20 -left-20 w-40 h-40 xs:w-60 xs:h-60 md:w-80 md:h-80 bg-tuwanx-gold/10 rounded-full blur-3xl"></div>
-        
+
         <div class="container mx-auto px-4 xs:px-6">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">Tuwanx <span class="text-gradient">By Numbers</span></h2>
             <p class="text-base md:text-lg text-gray-600 text-center mb-10 md:mb-16 max-w-2xl mx-auto">Live figures from the Tuwanx app, updated regularly.</p>
