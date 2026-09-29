@@ -325,9 +325,9 @@
                 <div class="lg:w-1/2">
                     <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl md:rounded-3xl p-6 md:p-8 voluminous-shadow">
                         <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Our <span class="text-gradient">Mission</span></h2>
-                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">At Tuwanx, we believe that everyone deserves to wear clothing that expresses their unique personality and fits perfectly. Our mission is to democratize custom fashion by connecting talented designers with customers who want personalized, high-quality clothing.</p>
-                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">We're breaking down the barriers that have traditionally made custom fashion inaccessible—high costs, limited options, and complicated processes.</p>
-                        <p class="text-gray-600 text-sm md:text-base">Through our platform, we're creating a global community where creativity flourishes and everyone can find their perfect fit.</p>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Tuwanx is a complete fashion marketplace. Our mission is to make it easy to buy and sell fashion, create custom pieces with designers, swap what you no longer wear, and shop in ways that give back.</p>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">We bring buyers, sellers, and designers together in one place, lowering the barriers of cost, access, and complexity that fashion often carries.</p>
+                        <p class="text-gray-600 text-sm md:text-base">Built in Nigeria with a global outlook, we're growing a community where style, enterprise, and creativity meet.</p>
                     </div>
                 </div>
                 
