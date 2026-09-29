@@ -409,26 +409,26 @@
         
         <div class="container mx-auto px-4 xs:px-6">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">Tuwanx <span class="text-gradient">By Numbers</span></h2>
-            <p class="text-base md:text-lg text-gray-600 text-center mb-10 md:mb-16 max-w-2xl mx-auto">Our impact in the custom fashion industry.</p>
-            
+            <p class="text-base md:text-lg text-gray-600 text-center mb-10 md:mb-16 max-w-2xl mx-auto">Live figures from the Tuwanx app, updated regularly.</p>
+
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
                 <div class="bg-white rounded-2xl p-6 text-center card-shadow">
-                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">5K+</div>
-                    <p class="text-gray-600 text-sm md:text-base">Designers</p>
+                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['total'] ?? 0) }}</div>
+                    <p class="text-gray-600 text-sm md:text-base">Downloads</p>
                 </div>
-                
+
                 <div class="bg-white rounded-2xl p-6 text-center card-shadow">
-                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">50K+</div>
-                    <p class="text-gray-600 text-sm md:text-base">Happy Customers</p>
+                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['ios'] ?? 0) }}</div>
+                    <p class="text-gray-600 text-sm md:text-base">on iOS</p>
                 </div>
-                
+
                 <div class="bg-white rounded-2xl p-6 text-center card-shadow">
-                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">100K+</div>
-                    <p class="text-gray-600 text-sm md:text-base">Custom Pieces</p>
+                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['android'] ?? 0) }}</div>
+                    <p class="text-gray-600 text-sm md:text-base">on Android</p>
                 </div>
-                
+
                 <div class="bg-white rounded-2xl p-6 text-center card-shadow">
-                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">15+</div>
+                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['countries'] ?? 0) }}</div>
                     <p class="text-gray-600 text-sm md:text-base">Countries</p>
                 </div>
             </div>

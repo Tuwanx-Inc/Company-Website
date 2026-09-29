@@ -14,9 +14,11 @@ class PageController extends Controller
         return view('home', ['installs' => $stats->installs()]);
     }
 
-    public function about()
+    public function about(TuwanxStats $stats)
     {
-        return view('about');
+        // Same live, cached download feed as the home page — only real,
+        // measured figures reach this page (no invented stats).
+        return view('about', ['installs' => $stats->installs()]);
     }
 
     public function privacy()
