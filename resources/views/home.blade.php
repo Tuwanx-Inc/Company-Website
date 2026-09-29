@@ -192,7 +192,7 @@
                 <div class="offer-body">
                     <span class="offer-label">Sell</span>
                     <h3 class="offer-title">List, Sell &amp; Earn</h3>
-                    <p class="offer-desc">Turn your wardrobe or your label into income. List fashion products in minutes and reach buyers across Nigeria and beyond.</p>
+                    <p class="offer-desc">Turn your wardrobe or your label into income. List fashion products in minutes and reach buyers around the world.</p>
                     <ul class="offer-points">
                         <li><i class="fas fa-check"></i> Fast listing with photos and pricing</li>
                         <li><i class="fas fa-check"></i> Manage orders and offers in-app</li>
