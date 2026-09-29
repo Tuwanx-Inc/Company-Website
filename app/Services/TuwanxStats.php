@@ -10,9 +10,10 @@ use Illuminate\Support\Facades\Log;
  * Pulls live install numbers from the Tuwanx API for display on the website.
  *
  * IMPORTANT: the analytics feed also carries revenue, order and churn figures.
- * Only the download counts are ever returned from here, so nothing commercial
- * can reach a public page by accident. The API token stays server-side - it is
- * never rendered into HTML or exposed to the browser.
+ * Only non-commercial COUNTS are ever returned from here (downloads, seller and
+ * buyer totals, country count) — no revenue, orders or churn can reach a public
+ * page by accident. The API token stays server-side - it is never rendered into
+ * HTML or exposed to the browser.
  *
  * Results are cached so the marketing site cannot hammer the API (or slow the
  * homepage down if the API is having a bad day).
@@ -129,12 +130,15 @@ class TuwanxStats
 
             $data = $response->json();
             $downloads = $data['downloads'] ?? [];
+            $users = $data['users'] ?? [];
 
-            // Deliberately narrow: only these fields leave this method.
+            // Deliberately narrow: only non-commercial COUNTS leave this method.
             return [
                 'total'      => (int) ($downloads['total'] ?? 0),
                 'android'    => (int) ($downloads['android'] ?? 0),
                 'ios'        => (int) ($downloads['ios'] ?? 0),
+                'sellers'    => (int) ($users['total_sellers'] ?? 0),
+                'buyers'     => (int) ($users['total_buyers'] ?? 0),
                 'countries'  => (int) ($data['countries']['total'] ?? 0),
                 'updated_at' => $data['generated_at'] ?? null,
                 'live'       => true,
@@ -152,6 +156,8 @@ class TuwanxStats
             'total'      => 0,
             'android'    => 0,
             'ios'        => 0,
+            'sellers'    => 0,
+            'buyers'     => 0,
             'countries'  => 0,
             'updated_at' => null,
             'live'       => false,
