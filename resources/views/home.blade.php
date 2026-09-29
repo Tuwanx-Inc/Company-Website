@@ -76,7 +76,7 @@
                 <div class="relative">
                     <div class="w-80 h-80 bg-tuwanx-gold/20 rounded-full absolute -top-10 -left-10 z-0"></div>
                     <div class="w-80 h-80 bg-tuwanx-gold/10 rounded-full absolute -bottom-10 -right-10 z-0"></div>
-                    <img src="{{ asset('assets/wireframe-4.png') }}" alt="Custom Fashion" class="relative z-10 rounded-3xl voluminous-shadow w-full max-w-md">
+                    <img src="{{ asset('assets/wireframe-4.png') }}" alt="Tuwanx fashion marketplace app" fetchpriority="high" decoding="async" class="relative z-10 rounded-3xl voluminous-shadow w-full max-w-md">
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
             <!-- 1. Custom Design -->
             <div class="offer-row fade-in">
                 <div class="offer-media floating-element">
-                    <img src="{{ asset('assets/design-create-wear.jpg') }}" alt="Design, create and wear custom fashion on Tuwanx">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/design-create-wear.jpg') }}" alt="Design, create and wear custom fashion on Tuwanx">
                 </div>
                 <div class="offer-body">
                     <span class="offer-label">Custom Design</span>
@@ -187,7 +187,7 @@
             <!-- 2. Sell -->
             <div class="offer-row reverse fade-in">
                 <div class="offer-media floating-element">
-                    <img src="{{ asset('assets/sell-fashion-products.jpg') }}" alt="List, sell and earn from fashion products on Tuwanx">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/sell-fashion-products.jpg') }}" alt="List, sell and earn from fashion products on Tuwanx">
                 </div>
                 <div class="offer-body">
                     <span class="offer-label">Sell</span>
@@ -204,7 +204,7 @@
             <!-- 3. Used / Thrift -->
             <div class="offer-row fade-in">
                 <div class="offer-media floating-element">
-                    <img src="{{ asset('assets/used-fashion.jpg') }}" alt="Thrift and shop pre-loved used fashion on Tuwanx">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/used-fashion.jpg') }}" alt="Thrift and shop pre-loved used fashion on Tuwanx">
                 </div>
                 <div class="offer-body">
                     <span class="offer-label">Thrift</span>
@@ -221,7 +221,7 @@
             <!-- 4. Swap -->
             <div class="offer-row reverse fade-in">
                 <div class="offer-media floating-element">
-                    <img src="{{ asset('assets/swap.jpg') }}" alt="Swap and trade fashion with the Tuwanx community">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/swap.jpg') }}" alt="Swap and trade fashion with the Tuwanx community">
                 </div>
                 <div class="offer-body">
                     <span class="offer-label">Swap</span>
@@ -238,7 +238,7 @@
             <!-- 5. Trade Showcase -->
             <div class="offer-row fade-in">
                 <div class="offer-media floating-element">
-                    <img src="{{ asset('assets/swap-2.jpg') }}" alt="Propose luxury trades and exchange fashion on Tuwanx">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/swap-2.jpg') }}" alt="Propose luxury trades and exchange fashion on Tuwanx">
                 </div>
                 <div class="offer-body">
                     <span class="offer-label">Trade</span>
@@ -255,7 +255,7 @@
             <!-- 6. Charity -->
             <div class="offer-row reverse fade-in">
                 <div class="offer-media floating-element">
-                    <img src="{{ asset('assets/buy-donate-charity.jpg') }}" alt="Buy and donate to charity through Tuwanx">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/buy-donate-charity.jpg') }}" alt="Buy and donate to charity through Tuwanx">
                 </div>
                 <div class="offer-body">
                     <span class="offer-label">Give Back</span>
@@ -279,7 +279,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">How <span class="text-gradient">Tuwanx</span> Works</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
-                    <img src="{{ asset('assets/wireframe-2.png') }}" alt="How It Works" class="rounded-3xl voluminous-shadow w-full">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/wireframe-2.png') }}" alt="How It Works" class="rounded-3xl voluminous-shadow w-full">
                 </div>
                 <div class="md:w-1/2 md:pl-12 fade-in">
                     <div class="mb-10 p-6 bg-white rounded-2xl card-shadow">
@@ -349,7 +349,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 md:pl-12 fade-in floating-element">
-                    <img src="{{ asset('assets/fashion-designers.png') }}" alt="Fashion Designers" class="rounded-3xl voluminous-shadow w-full">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/fashion-designers.png') }}" alt="Fashion Designers" class="rounded-3xl voluminous-shadow w-full">
                 </div>
             </div>
         </div>
@@ -363,7 +363,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">Powerful <span class="text-gradient">Features</span></h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 fade-in floating-element">
-                    <img src="{{ asset('assets/app-features.png') }}" alt="App Features" class="rounded-3xl voluminous-shadow w-full">
+                    <img loading="lazy" decoding="async" src="{{ asset('assets/app-features.png') }}" alt="App Features" class="rounded-3xl voluminous-shadow w-full">
                 </div>
                 <div class="md:w-1/2 md:pl-12 fade-in">
                     <div class="mb-8 p-6 bg-white rounded-2xl card-shadow">
@@ -515,7 +515,7 @@
                         </div>
                     </div>
                     <div class="md:w-1/2 flex justify-center floating-element">
-                        <img src="{{ asset('assets/app-screen.png') }}" alt="Mobile App" class="w-64 rounded-3xl voluminous-shadow">
+                        <img loading="lazy" decoding="async" src="{{ asset('assets/app-screen.png') }}" alt="Mobile App" class="w-64 rounded-3xl voluminous-shadow">
                     </div>
                 </div>
             </div>

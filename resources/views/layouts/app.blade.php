@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
+    <!-- Preload the hero (LCP) image so it is discovered immediately -->
+    <link rel="preload" as="image" href="{{ asset('assets/wireframe-4.png') }}" fetchpriority="high">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Fonts + icons loaded without blocking first paint (font-display: swap) -->
