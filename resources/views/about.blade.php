@@ -347,46 +347,6 @@
         </div>
     </section>
 
-    <!-- Story Timeline Section -->
-    <section class="section-padding gradient-bg relative overflow-hidden">
-        <div class="absolute -top-20 -right-20 w-40 h-40 xs:w-60 xs:h-60 md:w-80 md:h-80 bg-tuwanx-gold/10 rounded-full blur-3xl"></div>
-        
-        <div class="container mx-auto px-4 xs:px-6">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">Our <span class="text-gradient">Journey</span></h2>
-            <p class="text-base md:text-lg text-gray-600 text-center mb-10 md:mb-16 max-w-2xl mx-auto">How Tuwanx grew from an idea into a complete fashion marketplace.</p>
-
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 voluminous-shadow">
-                    <div class="space-y-8 md:space-y-12">
-                        <div class="timeline-item">
-                            <h3 class="text-lg md:text-xl font-semibold mb-2">How It Started</h3>
-                            <p class="text-gray-600 text-sm md:text-base mb-2">In Nigeria</p>
-                            <p class="text-gray-600 text-sm md:text-base">Tuwanx began with a simple goal: make it easier to buy, sell, and personalize fashion in one place.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                            <h3 class="text-lg md:text-xl font-semibold mb-2">More Than Custom</h3>
-                            <p class="text-gray-600 text-sm md:text-base mb-2">Building the marketplace</p>
-                            <p class="text-gray-600 text-sm md:text-base">We grew beyond custom design to include selling fashion products, pre-loved and thrift styles, swaps, and charitable causes.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                            <h3 class="text-lg md:text-xl font-semibold mb-2">Live on Mobile</h3>
-                            <p class="text-gray-600 text-sm md:text-base mb-2">2026</p>
-                            <p class="text-gray-600 text-sm md:text-base">Tuwanx launched on the App Store and Google Play, bringing the full marketplace to buyers and sellers on the go.</p>
-                        </div>
-
-                        <div class="timeline-item">
-                            <h3 class="text-lg md:text-xl font-semibold mb-2">Today</h3>
-                            <p class="text-gray-600 text-sm md:text-base mb-2">Now</p>
-                            <p class="text-gray-600 text-sm md:text-base">A growing community of buyers, sellers, and designers in Nigeria and around the world, with new features rolling out continuously.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Stats Section (live from the Tuwanx API — real, measured figures only) -->
     <section class="section-padding gradient-bg relative overflow-hidden">
         <div class="absolute -bottom-20 -left-20 w-40 h-40 xs:w-60 xs:h-60 md:w-80 md:h-80 bg-tuwanx-gold/10 rounded-full blur-3xl"></div>
