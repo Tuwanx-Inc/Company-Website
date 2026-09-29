@@ -475,8 +475,8 @@
         
         <div class="container mx-auto px-4 xs:px-6">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">Join the <span class="text-gradient">Custom Fashion</span> Revolution</h2>
-                <p class="text-base md:text-lg lg:text-xl text-gray-600 mb-6 md:mb-10">Be part of our story and experience the future of personalized fashion.</p>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">Join the <span class="text-gradient">Tuwanx</span> Community</h2>
+                <p class="text-base md:text-lg lg:text-xl text-gray-600 mb-6 md:mb-10">Buy, sell, design, and swap fashion &mdash; and give back &mdash; all in one place.</p>
                 <div class="flex flex-col xs:flex-row justify-center space-y-3 xs:space-y-0 xs:space-x-4 btn-group-responsive">
                     <a href="#" class="btn-gold px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold text-base md:text-lg btn-responsive">Start Shopping</a>
                     <a href="{{ route('contact') }}" class="btn-outline px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold text-base md:text-lg btn-responsive">Contact Us</a>
