@@ -334,8 +334,8 @@
                 <div class="lg:w-1/2">
                     <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 voluminous-shadow">
                         <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Our <span class="text-gradient">Vision</span></h2>
-                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">We envision a world where custom clothing is the norm, not the exception. Where every person can easily access beautifully crafted, personalized fashion that tells their unique story.</p>
-                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">We're building the future of fashion—one where sustainability, personal expression, and craftsmanship come together to create meaningful connections between designers and wearers.</p>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">We envision fashion that works for everyone &mdash; where buying, selling, designing, and reusing clothing all happen simply, in one trusted place.</p>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">We want to make style more accessible and more sustainable, connecting the people who make, sell, and wear fashion, with room to give back along the way.</p>
                         <div class="bg-tuwanx-gold/5 rounded-xl p-4 md:p-6 mt-6 md:mt-8">
                             <h3 class="font-semibold text-tuwanx-gold mb-2 text-lg md:text-xl">Our Core Values</h3>
                             <ul class="space-y-2 text-gray-700 text-sm md:text-base">
