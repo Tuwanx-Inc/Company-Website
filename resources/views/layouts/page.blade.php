@@ -149,9 +149,9 @@
         </div>
         
         <!-- Mobile Menu -->
-        <div class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-40 md:hidden" id="mobileMenu">
-            <div class="container mx-auto px-6 py-8 mt-16">
-                <div class="flex flex-col space-y-8">
+        <div class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-40 md:hidden overflow-y-auto" id="mobileMenu">
+            <div class="container mx-auto px-6 pt-24 pb-16">
+                <div class="flex flex-col space-y-5">
                     <a href="{{ route('home') }}" class="text-2xl font-semibold py-2 border-b border-gray-100">Home</a>
                     <a href="{{ route('about') }}" class="text-2xl font-semibold py-2 border-b border-gray-100">About</a>
                     <a href="{{ route('contact') }}" class="text-2xl font-semibold py-2 border-b border-gray-100">Contact</a>

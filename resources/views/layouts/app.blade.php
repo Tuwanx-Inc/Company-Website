@@ -269,7 +269,7 @@
         </div>
         
         <!-- Mobile Menu -->
-        <div class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-40 md:hidden" id="mobileMenu">
+        <div class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-40 md:hidden overflow-y-auto" id="mobileMenu">
             @yield('mobile-menu')
         </div>
     </nav>
