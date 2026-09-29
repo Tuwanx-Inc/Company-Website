@@ -397,23 +397,23 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
                 <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['sellers'] ?? 0) }}</div>
+                    <p class="text-gray-600 text-sm md:text-base">Sellers</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['buyers'] ?? 0) }}</div>
+                    <p class="text-gray-600 text-sm md:text-base">Happy Customers</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
                     <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['total'] ?? 0) }}</div>
                     <p class="text-gray-600 text-sm md:text-base">Downloads</p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 text-center card-shadow">
-                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['ios'] ?? 0) }}</div>
-                    <p class="text-gray-600 text-sm md:text-base">on iOS</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
-                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['android'] ?? 0) }}</div>
-                    <p class="text-gray-600 text-sm md:text-base">on Android</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
-                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['countries'] ?? 0) }}</div>
-                    <p class="text-gray-600 text-sm md:text-base">Countries</p>
+                    <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">Global</div>
+                    <p class="text-gray-600 text-sm md:text-base">Reach</p>
                 </div>
             </div>
         </div>
