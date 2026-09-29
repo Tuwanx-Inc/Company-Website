@@ -259,7 +259,7 @@
                 </div>
                 <div class="offer-body">
                     <span class="offer-label">Give Back</span>
-                    <h3 class="offer-title">Purpose Over Profit</h3>
+                    <h3 class="offer-title">Meaningful &amp; Charitable Causes</h3>
                     <p class="offer-desc">Shop with meaning. Every purchase can include a donation, turning your style into support for the causes that matter.</p>
                     <ul class="offer-points">
                         <li><i class="fas fa-check"></i> Add a donation at checkout</li>
