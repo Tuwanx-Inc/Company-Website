@@ -310,7 +310,7 @@
         <div class="container mx-auto px-4 xs:px-6 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-responsive md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">Our <span class="text-gradient">Story</span></h1>
-                <p class="text-base xs:text-lg md:text-xl text-gray-600 mb-6 md:mb-10">Discover the passion and vision behind Tuwanx, the platform revolutionizing custom fashion.</p>
+                <p class="text-base xs:text-lg md:text-xl text-gray-600 mb-6 md:mb-10">The story behind Tuwanx &mdash; a fashion marketplace to buy, sell, design, swap, and give back, built in Nigeria for a global community.</p>
                 <div class="flex flex-col xs:flex-row justify-center space-y-3 xs:space-y-0 xs:space-x-4 btn-group-responsive">
                     <a href="#mission" class="btn-gold px-5 py-3 rounded-lg font-semibold text-base btn-responsive">Our Mission</a>
                 </div>
