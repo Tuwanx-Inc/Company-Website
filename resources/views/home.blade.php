@@ -404,8 +404,7 @@
         <div class="absolute -top-20 -left-20 w-80 h-80 bg-tuwanx-gold/5 rounded-full blur-3xl"></div>
         
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 fade-in">What Our <span class="text-gradient">Customers Say</span></h2>
-            <p class="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto fade-in">Hear from customers who found their perfect custom outfits through Tuwanx.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">What Users <span class="text-gradient">Are Saying</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-3xl card-shadow fade-in">
                     <div class="flex items-center mb-4">
