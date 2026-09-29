@@ -447,7 +447,7 @@
                         <i class="fas fa-leaf text-tuwanx-gold text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-center mb-4">Sustainability</h3>
-                    <p class="text-gray-600 text-sm md:text-base text-center">We promote sustainable fashion by reducing waste through made-to-order clothing and supporting ethical production practices.</p>
+                    <p class="text-gray-600 text-sm md:text-base text-center">We promote sustainable fashion through made-to-order pieces, reuse and thrift, and swaps that give clothing a second life.</p>
                 </div>
                 
                 <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow">
@@ -455,7 +455,7 @@
                         <i class="fas fa-hands-helping text-tuwanx-gold text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-center mb-4">Empowerment</h3>
-                    <p class="text-gray-600 text-sm md:text-base text-center">We empower independent designers to build sustainable businesses and customers to express their unique style.</p>
+                    <p class="text-gray-600 text-sm md:text-base text-center">We empower independent designers and sellers to build businesses, and buyers to express their unique style.</p>
                 </div>
                 
                 <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow">
@@ -463,7 +463,7 @@
                         <i class="fas fa-globe-americas text-tuwanx-gold text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-center mb-4">Inclusivity</h3>
-                    <p class="text-gray-600 text-sm md:text-base text-center">We believe custom fashion should be accessible to everyone, regardless of size, budget, or location.</p>
+                    <p class="text-gray-600 text-sm md:text-base text-center">We believe fashion should be accessible to everyone, regardless of size, budget, or location.</p>
                 </div>
             </div>
         </div>
