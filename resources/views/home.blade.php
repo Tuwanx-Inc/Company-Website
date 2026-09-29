@@ -399,64 +399,65 @@
         </div>
     </section>
     
-    <!-- Section 5: Testimonials -->
-    <section id="testimonials" class="section gradient-bg relative overflow-hidden">
+    <!-- Section 5: Live Reviews ticker -->
+    <style>
+        #testimonials .ticker { overflow: hidden; position: relative; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+        #testimonials .ticker-track { display: flex; gap: 1.25rem; width: max-content; animation: tk-scroll 48s linear infinite; }
+        #testimonials .ticker:hover .ticker-track { animation-play-state: paused; }
+        @keyframes tk-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        #testimonials .rv { flex: 0 0 300px; background: #fff; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0,0,0,.1); }
+        #testimonials .rv .stars { color: #D4AF37; font-size: .82rem; letter-spacing: 1px; }
+        #testimonials .rv .quote { color: #4b5563; font-size: .95rem; line-height: 1.55; margin: .6rem 0 1.1rem; }
+        #testimonials .rv .who { display: flex; align-items: center; gap: .65rem; }
+        #testimonials .rv .av { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg, #D4AF37, #b8941f); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        #testimonials .rv .nm { font-weight: 600; font-size: .9rem; color: #111827; }
+        #testimonials .rv .tg { color: #6b7280; font-size: .78rem; }
+        @media (prefers-reduced-motion: reduce) { #testimonials .ticker-track { animation: none; } }
+    </style>
+    <section id="testimonials" class="py-20 md:py-28 gradient-bg relative overflow-hidden">
         <div class="absolute -top-20 -left-20 w-80 h-80 bg-tuwanx-gold/5 rounded-full blur-3xl"></div>
-        
+
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in">What Users <span class="text-gradient">Are Saying</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl card-shadow fade-in">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-tuwanx-gold to-tuwanx-gold/80 rounded-full flex items-center justify-center text-white font-bold mr-4 gold-glow">S</div>
-                        <div>
-                            <h4 class="font-semibold">Sarah Johnson</h4>
-                            <p class="text-gray-500 text-sm">Wedding Dress</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 fade-in">Live <span class="text-gradient">Reviews</span></h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto fade-in">What people are saying about Tuwanx.</p>
+        </div>
+
+        {{-- Real user reviews from the app stores (faithfully excerpted). --}}
+        @php
+            $reviews = [
+                ['i' => 'O', 'nm' => 'Omobolanle Famubode', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Connects buyers and sellers in a really simple way. Easy to use and stress-free — it's exceptional. I love it!"],
+                ['i' => 'I', 'nm' => 'Ibe Chukwuedozie', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Registration is so quick, no stress, and there are so many sellers to buy from. User-friendly and doesn't use much data."],
+                ['i' => 'I', 'nm' => 'Idowu Bolade', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Excellent platform for buying and selling fashion — quick registration, user-friendly, and seamless transactions."],
+                ['i' => 'N', 'nm' => 'Naomi Phil Eta', 'tg' => 'Verified user', 'stars' => 5, 'text' => "With Tuwanx you can't go wrong. You get trust, integrity and honesty with all your transactions."],
+                ['i' => 'V', 'nm' => 'Victory Akele', 'tg' => 'Verified user', 'stars' => 5, 'text' => "My go-to fashion app! Great unique pieces, and it helped me clear out my closet for cash. Big 5 stars!"],
+                ['i' => 'A', 'nm' => 'Ashonom Maiwada', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Top-notch app for sellers. Got buyers fast, payments were smooth, and I made good money selling preloved items."],
+                ['i' => 'D', 'nm' => 'Dorcas Oyedokun', 'tg' => 'Verified user', 'stars' => 5, 'text' => "I can connect with designers seamlessly, from anywhere in the world. It feels like a community, not just a platform."],
+                ['i' => 'J', 'nm' => 'Joy Oluomo', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Simple, organized and secure. One of the best fashion marketplace apps I've seen. Highly recommend!"],
+                ['i' => 'B', 'nm' => 'Barilera Kado', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Very innovative — strictly fashion, and sellers are verified with location. Very good app."],
+                ['i' => 'K', 'nm' => 'Kemi Sola', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Seamless and easy to navigate, connecting me with verified fashion vendors across the world."],
+                ['i' => 'W', 'nm' => 'Waldes Blessing', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Finally an app where you can get clothes made for YOU. Got my custom piece and I'm obsessed!"],
+                ['i' => 'F', 'nm' => 'Favour Baby', 'tg' => 'Verified user', 'stars' => 5, 'text' => "One of the best online shops I've used — fair prices, great variety, and clear order tracking."],
+                ['i' => 'A', 'nm' => 'Amarachi Prince', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Finally a platform dedicated to fashion entrepreneurs. Well designed and loads quickly."],
+                ['i' => 'N', 'nm' => 'Nnanna Kelechi', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Found what I needed in minutes. Good prices, fast checkout, and helpful updates on new stock."],
+                ['i' => 'P', 'nm' => 'Peter Johnson', 'tg' => 'Verified user', 'stars' => 5, 'text' => "Inviting, easy-to-navigate interface with top-quality accessories, accessible from anywhere. Classy, fast and reliable!"],
+                ['i' => 'B', 'nm' => 'Bukola Demilade', 'tg' => 'Verified user', 'stars' => 5, 'text' => "One of the best apps — so reliable and user-friendly. Kudos to the developers!"],
+            ];
+        @endphp
+        <div class="ticker">
+            <div class="ticker-track">
+                @foreach(array_merge($reviews, $reviews) as $r)
+                    <div class="rv">
+                        <div class="stars">@for($s = 0; $s < $r['stars']; $s++)<i class="fas fa-star"></i>@endfor</div>
+                        <div class="quote">&ldquo;{{ $r['text'] }}&rdquo;</div>
+                        <div class="who">
+                            <div class="av">{{ $r['i'] }}</div>
+                            <div>
+                                <div class="nm">{{ $r['nm'] }}</div>
+                                <div class="tg">{{ $r['tg'] }}</div>
+                            </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"My wedding dress was everything I dreamed of and more! The designer understood my vision perfectly and created a masterpiece."</p>
-                    <div class="flex text-tuwanx-gold mt-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-3xl card-shadow fade-in">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-tuwanx-gold to-tuwanx-gold/80 rounded-full flex items-center justify-center text-white font-bold mr-4 gold-glow">M</div>
-                        <div>
-                            <h4 class="font-semibold">Michael Torres</h4>
-                            <p class="text-gray-500 text-sm">Custom Suit</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"The attention to detail on my custom suit was incredible. I received so many compliments at my brother's wedding!"</p>
-                    <div class="flex text-tuwanx-gold mt-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-3xl card-shadow fade-in">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-tuwanx-gold to-tuwanx-gold/80 rounded-full flex items-center justify-center text-white font-bold mr-4 gold-glow">J</div>
-                        <div>
-                            <h4 class="font-semibold">Jessica Lee</h4>
-                            <p class="text-gray-500 text-sm">Evening Gown</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"I was hesitant about ordering custom clothing online, but Tuwanx made the process so easy and the result was stunning!"</p>
-                    <div class="flex text-tuwanx-gold mt-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
