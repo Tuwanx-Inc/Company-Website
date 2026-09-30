@@ -368,6 +368,75 @@
         </div>
     </section>
 
+    <!-- What We Do -->
+    <section class="section-padding gradient-bg">
+        <div class="container mx-auto px-4 xs:px-6">
+            <span class="block text-center text-tuwanx-gold font-semibold tracking-[0.2em] uppercase text-xs mb-3">What We Do</span>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">One marketplace, <span class="text-gradient">every way to fashion</span></h2>
+            <p class="text-base md:text-lg text-gray-600 text-center mb-10 md:mb-16 max-w-2xl mx-auto">From custom design to pre-loved finds, Tuwanx brings the whole fashion journey into one app.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-5xl mx-auto">
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 md:p-7 card-shadow transition duration-300 hover:-translate-y-1">
+                    <div class="feature-icon"><i class="fas fa-bag-shopping text-tuwanx-gold"></i></div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Shop Fashion</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Browse and buy quality fashion from trusted sellers around the world.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 md:p-7 card-shadow transition duration-300 hover:-translate-y-1">
+                    <div class="feature-icon"><i class="fas fa-store text-tuwanx-gold"></i></div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Sell &amp; Earn</h3>
+                    <p class="text-gray-600 text-sm md:text-base">List your products in minutes and reach buyers everywhere, with secure payouts.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 md:p-7 card-shadow transition duration-300 hover:-translate-y-1">
+                    <div class="feature-icon"><i class="fas fa-pen-ruler text-tuwanx-gold"></i></div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Custom Design</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Work directly with designers to create made-to-order pieces built for you.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 md:p-7 card-shadow transition duration-300 hover:-translate-y-1">
+                    <div class="feature-icon"><i class="fas fa-right-left text-tuwanx-gold"></i></div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Swap &amp; Trade</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Exchange the pieces you no longer wear for styles you love &mdash; no cash needed.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 md:p-7 card-shadow transition duration-300 hover:-translate-y-1">
+                    <div class="feature-icon"><i class="fas fa-recycle text-tuwanx-gold"></i></div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Pre-loved &amp; Thrift</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Give fashion a second life with quality used pieces at friendly prices.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 md:p-7 card-shadow transition duration-300 hover:-translate-y-1">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-heart text-tuwanx-gold"></i></div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2">Give Back</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Shop with purpose &mdash; support charitable causes as you buy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Tuwanx Works (dark) -->
+    <section class="py-16 md:py-24" style="background:#0b0b0d;">
+        <div class="container mx-auto px-4 xs:px-6">
+            <span class="block text-center font-semibold tracking-[0.2em] uppercase text-xs mb-3" style="color:#D4AF37;">How It Works</span>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4" style="color:#fff;">Getting started takes minutes</h2>
+            <p class="text-base md:text-lg text-center mb-12 md:mb-16 max-w-2xl mx-auto" style="color:#9ca3af;">Whether you are here to buy, sell, or create &mdash; the flow is simple.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-xl mx-auto mb-5 flex items-center justify-center font-bold text-lg" style="background:linear-gradient(135deg,#D4AF37,#b8941f);color:#fff;">1</div>
+                    <h3 class="font-semibold text-lg mb-2" style="color:#fff;">Create your account</h3>
+                    <p class="text-sm md:text-base" style="color:#9ca3af;">Sign up in minutes as a buyer, seller, or designer.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-xl mx-auto mb-5 flex items-center justify-center font-bold text-lg" style="background:linear-gradient(135deg,#D4AF37,#b8941f);color:#fff;">2</div>
+                    <h3 class="font-semibold text-lg mb-2" style="color:#fff;">Explore &amp; connect</h3>
+                    <p class="text-sm md:text-base" style="color:#9ca3af;">Discover pieces, chat with sellers, or brief a designer on your idea.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-xl mx-auto mb-5 flex items-center justify-center font-bold text-lg" style="background:linear-gradient(135deg,#D4AF37,#b8941f);color:#fff;">3</div>
+                    <h3 class="font-semibold text-lg mb-2" style="color:#fff;">Buy, sell or swap</h3>
+                    <p class="text-sm md:text-base" style="color:#9ca3af;">Transact securely and track everything from checkout to your door.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Stats Section (live from the Tuwanx API — real, measured figures only) -->
     <section class="section-padding gradient-bg relative overflow-hidden">
         <div class="absolute -bottom-20 -left-20 w-40 h-40 xs:w-60 xs:h-60 md:w-80 md:h-80 bg-tuwanx-gold/10 rounded-full blur-3xl"></div>
