@@ -130,12 +130,8 @@
         .mm-link:hover, .mm-link:active { color: #D4AF37; padding-left: 0.5rem; }
         .mm-arrow { font-size: .8rem; color: #D4AF37; opacity: 0; transform: translateX(-6px); transition: all .2s ease; }
         .mm-link:hover .mm-arrow, .mm-link:active .mm-arrow { opacity: 1; transform: translateX(0); }
-        .mm-social {
-            width: 44px; height: 44px; border-radius: 9999px;
-            border: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center;
-            color: #6b7280; font-size: 1.05rem; transition: all .2s ease;
-        }
-        .mm-social:hover { background: #D4AF37; border-color: #D4AF37; color: #fff; transform: translateY(-2px); }
+        .mm-social { color: #00171F; font-size: 1.45rem; transition: color .2s ease; }
+        .mm-social:hover, .mm-social:active { color: #D4AF37; }
         
         .progress-bar {
             height: 4px;

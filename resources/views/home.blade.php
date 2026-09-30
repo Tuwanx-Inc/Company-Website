@@ -38,11 +38,11 @@
         </nav>
 
         <div class="mt-8 flex flex-col gap-3">
-            <a href="#download" class="btn-gold w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Sign Up</a>
-            <a href="#download" class="btn-outline w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Log In</a>
+            <a href="#download" class="btn-gold w-full text-center px-4 py-4 rounded-xl font-semibold text-lg">Sign Up</a>
+            <a href="#download" class="btn-outline w-full text-center px-4 py-4 rounded-xl font-semibold text-lg">Log In</a>
         </div>
 
-        <div class="flex items-center justify-center gap-4 mt-8">
+        <div class="flex items-center justify-center gap-6 mt-8">
             <a href="https://www.instagram.com/tuwanxinc/" target="_blank" rel="noopener" aria-label="Tuwanx on Instagram" class="mm-social"><i class="fab fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@tuwanxinc" target="_blank" rel="noopener" aria-label="Tuwanx on TikTok" class="mm-social"><i class="fab fa-tiktok"></i></a>
             <a href="https://x.com/tuwanxapp" target="_blank" rel="noopener" aria-label="Tuwanx on X" class="mm-social"><i class="fab fa-x-twitter"></i></a>

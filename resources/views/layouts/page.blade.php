@@ -131,12 +131,8 @@
         .mm-link:hover, .mm-link:active { color: #D4AF37; padding-left: 0.5rem; }
         .mm-arrow { font-size: .8rem; color: #D4AF37; opacity: 0; transform: translateX(-6px); transition: all .2s ease; }
         .mm-link:hover .mm-arrow, .mm-link:active .mm-arrow { opacity: 1; transform: translateX(0); }
-        .mm-social {
-            width: 44px; height: 44px; border-radius: 9999px;
-            border: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center;
-            color: #6b7280; font-size: 1.05rem; transition: all .2s ease;
-        }
-        .mm-social:hover { background: #D4AF37; border-color: #D4AF37; color: #fff; transform: translateY(-2px); }
+        .mm-social { color: #00171F; font-size: 1.45rem; transition: color .2s ease; }
+        .mm-social:hover, .mm-social:active { color: #D4AF37; }
     </style>
     @yield('styles')
 </head>
@@ -183,11 +179,11 @@
                 </nav>
 
                 <div class="mt-8 flex flex-col gap-3">
-                    <a href="{{ route('home') }}#download" class="btn-gold w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Sign Up</a>
-                    <a href="{{ route('home') }}#download" class="btn-outline w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Log In</a>
+                    <a href="{{ route('home') }}#download" class="btn-gold w-full text-center px-4 py-4 rounded-xl font-semibold text-lg">Sign Up</a>
+                    <a href="{{ route('home') }}#download" class="btn-outline w-full text-center px-4 py-4 rounded-xl font-semibold text-lg">Log In</a>
                 </div>
 
-                <div class="flex items-center justify-center gap-4 mt-8">
+                <div class="flex items-center justify-center gap-6 mt-8">
                     <a href="https://www.instagram.com/tuwanxinc/" target="_blank" rel="noopener" aria-label="Tuwanx on Instagram" class="mm-social"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.tiktok.com/@tuwanxinc" target="_blank" rel="noopener" aria-label="Tuwanx on TikTok" class="mm-social"><i class="fab fa-tiktok"></i></a>
                     <a href="https://x.com/tuwanxapp" target="_blank" rel="noopener" aria-label="Tuwanx on X" class="mm-social"><i class="fab fa-x-twitter"></i></a>
