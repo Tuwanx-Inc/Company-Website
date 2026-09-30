@@ -132,6 +132,7 @@
         .mm-link:hover .mm-arrow, .mm-link:active .mm-arrow { opacity: 1; transform: translateX(0); }
         .mm-social { color: #00171F; font-size: 1.45rem; transition: color .2s ease; }
         .mm-social:hover, .mm-social:active { color: #D4AF37; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
         
         .progress-bar {
             height: 4px;
