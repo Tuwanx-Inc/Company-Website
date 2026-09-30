@@ -51,30 +51,23 @@
         box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25);
     }
     
+    /* Modern squircle icon badge */
     .feature-icon {
-        background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(212, 175, 55, 0.06));
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 16px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        margin-bottom: 18px;
+        border: 1px solid rgba(212, 175, 55, 0.28);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.12);
     }
-    
-    @media (min-width: 768px) {
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-        }
-    }
-    
+    .feature-icon i { font-size: 1.35rem; }
+
     @media (min-width: 1024px) {
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-        }
+        .feature-icon { width: 60px; height: 60px; }
     }
     
     .floating-element {

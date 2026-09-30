@@ -101,17 +101,20 @@
             box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
         }
         
+        /* Modern squircle icon badge */
         .feature-icon {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(212, 175, 55, 0.06));
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 18px;
+            border: 1px solid rgba(212, 175, 55, 0.28);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.12);
         }
+        .feature-icon i { font-size: 1.35rem; }
         
         .progress-bar {
             height: 4px;
