@@ -340,8 +340,7 @@
         <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-tuwanx-gold/5 rounded-full blur-3xl"></div>
         
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 fade-in">Meet Our <span class="text-gradient">Talented Designers</span></h2>
-            <p class="text-lg text-gray-600 text-center mb-16 max-w-2xl mx-auto fade-in">From established fashion houses to emerging talents, our platform connects you with diverse creative professionals.</p>
+            <h2 class="sr-only">Our Designers</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
                     <div class="grid grid-cols-2 gap-6">
