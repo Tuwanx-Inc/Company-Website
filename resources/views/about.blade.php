@@ -69,6 +69,21 @@
     @media (min-width: 1024px) {
         .feature-icon { width: 60px; height: 60px; }
     }
+
+    /* Modern mobile-menu links */
+    .mm-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0.25rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #00171F;
+        transition: color .2s ease, padding-left .2s ease;
+    }
+    .mm-link:hover, .mm-link:active { color: #D4AF37; padding-left: 0.5rem; }
+    .mm-arrow { font-size: .8rem; color: #D4AF37; opacity: 0; transform: translateX(-6px); transition: all .2s ease; }
+    .mm-link:hover .mm-arrow, .mm-link:active .mm-arrow { opacity: 1; transform: translateX(0); }
     
     .floating-element {
         animation: float 6s ease-in-out infinite;
