@@ -302,10 +302,21 @@
 @endsection
 
 @section('content')
-    <h1 class="sr-only">About Tuwanx</h1>
+    <!-- Page header -->
+    <section class="gradient-bg relative overflow-hidden pt-28 md:pt-36 pb-12 md:pb-16">
+        <div class="absolute -top-20 -right-20 w-40 h-40 xs:w-60 xs:h-60 md:w-80 md:h-80 bg-tuwanx-gold/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-40 h-40 xs:w-60 xs:h-60 md:w-80 md:h-80 bg-tuwanx-gold/5 rounded-full blur-3xl"></div>
+        <div class="container mx-auto px-4 xs:px-6 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="inline-block text-tuwanx-gold font-semibold tracking-[0.2em] uppercase text-xs mb-3">About Tuwanx</span>
+                <h1 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">The complete <span class="text-gradient">fashion marketplace</span></h1>
+                <p class="text-base xs:text-lg md:text-xl text-gray-600">Buy, sell, design custom pieces, swap what you no longer wear, and give back &mdash; all in one app, built in Nigeria for a global community.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Mission & Vision Section -->
-    <section class="section-padding bg-white pt-28 md:pt-32" id="mission">
+    <section class="section-padding bg-white" id="mission">
         <div class="container mx-auto px-4 xs:px-6">
             <div class="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
                 <div class="lg:w-1/2">
@@ -358,22 +369,22 @@
             <p class="text-base md:text-lg text-gray-600 text-center mb-10 md:mb-16 max-w-2xl mx-auto">Live figures from the Tuwanx app, updated regularly.</p>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
-                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+                <div class="bg-white rounded-2xl p-6 text-center card-shadow transition duration-300 hover:-translate-y-1">
                     <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['sellers'] ?? 0) }}</div>
                     <p class="text-gray-600 text-sm md:text-base">Sellers</p>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+                <div class="bg-white rounded-2xl p-6 text-center card-shadow transition duration-300 hover:-translate-y-1">
                     <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['buyers'] ?? 0) }}</div>
                     <p class="text-gray-600 text-sm md:text-base">Happy Customers</p>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+                <div class="bg-white rounded-2xl p-6 text-center card-shadow transition duration-300 hover:-translate-y-1">
                     <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">{{ number_format($installs['total'] ?? 0) }}</div>
                     <p class="text-gray-600 text-sm md:text-base">Downloads</p>
                 </div>
 
-                <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+                <div class="bg-white rounded-2xl p-6 text-center card-shadow transition duration-300 hover:-translate-y-1">
                     <div class="text-3xl md:text-4xl font-bold text-tuwanx-gold mb-2">Global</div>
                     <p class="text-gray-600 text-sm md:text-base">Reach</p>
                 </div>
@@ -388,7 +399,7 @@
             <p class="text-base md:text-lg text-gray-600 text-center mb-10 md:mb-16 max-w-2xl mx-auto">What drives us forward and sets us apart.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-                <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow">
+                <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow transition duration-300 hover:-translate-y-1">
                     <div class="feature-icon mx-auto">
                         <i class="fas fa-leaf text-tuwanx-gold text-2xl"></i>
                     </div>
@@ -396,7 +407,7 @@
                     <p class="text-gray-600 text-sm md:text-base text-center">We promote sustainable fashion through made-to-order pieces, reuse and thrift, and swaps that give clothing a second life.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow">
+                <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow transition duration-300 hover:-translate-y-1">
                     <div class="feature-icon mx-auto">
                         <i class="fas fa-hands-helping text-tuwanx-gold text-2xl"></i>
                     </div>
@@ -404,7 +415,7 @@
                     <p class="text-gray-600 text-sm md:text-base text-center">We empower independent designers and sellers to build businesses, and buyers to express their unique style.</p>
                 </div>
                 
-                <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow">
+                <div class="bg-gradient-to-br from-tuwanx-gold/5 to-tuwanx-gold/10 rounded-2xl p-6 md:p-8 voluminous-shadow transition duration-300 hover:-translate-y-1">
                     <div class="feature-icon mx-auto">
                         <i class="fas fa-globe-americas text-tuwanx-gold text-2xl"></i>
                     </div>
