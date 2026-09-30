@@ -142,10 +142,24 @@
     <!-- Section 1.75: Marketplace / Explore -->
     <style>
         #marketplace { background: #0b0b0d; }
-        #marketplace .offer-row { display: flex; flex-direction: column; align-items: center; gap: 2.5rem; margin-bottom: 6rem; }
+        /* Sticky-stacking "cards as pages": each band pins under the nav and the next scrolls up over it. */
+        #marketplace .offer-row {
+            position: sticky;
+            top: 84px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.75rem;
+            margin-bottom: 1.75rem;
+            background: #16171d;
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 1.5rem;
+            padding: 1.75rem 1.5rem;
+            box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.85);
+        }
         #marketplace .offer-row:last-child { margin-bottom: 0; }
-        #marketplace .offer-media { flex: 0 0 auto; width: 310px; max-width: 82%; }
-        #marketplace .offer-media img { width: 100%; height: auto; display: block; border-radius: 1.5rem; box-shadow: 0 30px 55px -15px rgba(0, 0, 0, 0.75); }
+        #marketplace .offer-media { flex: 0 0 auto; width: 300px; max-width: 82%; }
+        #marketplace .offer-media img { width: 100%; height: auto; display: block; border-radius: 1.25rem; box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7); }
         #marketplace .offer-body { flex: 1; max-width: 560px; }
         #marketplace .offer-label { display: inline-block; color: #D4AF37; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
         #marketplace .offer-title { color: #ffffff; font-weight: 700; font-size: 1.9rem; line-height: 1.15; margin: 0.5rem 0 1rem; }
@@ -154,12 +168,17 @@
         #marketplace .offer-points li { color: #9ca3af; font-size: 0.98rem; margin-bottom: 0.7rem; display: flex; align-items: flex-start; }
         #marketplace .offer-points li i { color: #D4AF37; margin-right: 0.7rem; margin-top: 0.28rem; font-size: 0.82rem; }
         @media (min-width: 768px) {
-            #marketplace .offer-row { flex-direction: row; gap: 5rem; }
+            #marketplace .offer-row { flex-direction: row; gap: 3.5rem; padding: 3rem; align-items: center; min-height: 56vh; }
             #marketplace .offer-row.reverse { flex-direction: row-reverse; }
             #marketplace .offer-title { font-size: 2.2rem; }
+            #marketplace .offer-media { width: 330px; }
+        }
+        /* No stacking motion for users who prefer reduced motion. */
+        @media (prefers-reduced-motion: reduce) {
+            #marketplace .offer-row { position: static; min-height: 0; }
         }
     </style>
-    <section id="marketplace" class="section relative overflow-hidden">
+    <section id="marketplace" class="section relative">
         <div class="absolute -top-20 -right-20 w-80 h-80 bg-tuwanx-gold/10 rounded-full blur-3xl"></div>
         <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-tuwanx-gold/5 rounded-full blur-3xl"></div>
 
@@ -169,7 +188,7 @@
 
             <!-- 1. Custom Design -->
             <div class="offer-row fade-in">
-                <div class="offer-media floating-element">
+                <div class="offer-media">
                     <img loading="lazy" decoding="async" src="{{ asset('assets/design-create-wear.jpg') }}" alt="Design, create and wear custom fashion on Tuwanx">
                 </div>
                 <div class="offer-body">
@@ -186,7 +205,7 @@
 
             <!-- 2. Sell -->
             <div class="offer-row reverse fade-in">
-                <div class="offer-media floating-element">
+                <div class="offer-media">
                     <img loading="lazy" decoding="async" src="{{ asset('assets/sell-fashion-products.jpg') }}" alt="List, sell and earn from fashion products on Tuwanx">
                 </div>
                 <div class="offer-body">
@@ -203,7 +222,7 @@
 
             <!-- 3. Used / Thrift -->
             <div class="offer-row fade-in">
-                <div class="offer-media floating-element">
+                <div class="offer-media">
                     <img loading="lazy" decoding="async" src="{{ asset('assets/used-fashion.jpg') }}" alt="Thrift and shop pre-loved used fashion on Tuwanx">
                 </div>
                 <div class="offer-body">
@@ -220,7 +239,7 @@
 
             <!-- 4. Swap -->
             <div class="offer-row reverse fade-in">
-                <div class="offer-media floating-element">
+                <div class="offer-media">
                     <img loading="lazy" decoding="async" src="{{ asset('assets/swap.jpg') }}" alt="Swap and trade fashion with the Tuwanx community">
                 </div>
                 <div class="offer-body">
@@ -237,7 +256,7 @@
 
             <!-- 5. Trade Showcase -->
             <div class="offer-row fade-in">
-                <div class="offer-media floating-element">
+                <div class="offer-media">
                     <img loading="lazy" decoding="async" src="{{ asset('assets/swap-2.jpg') }}" alt="Propose luxury trades and exchange fashion on Tuwanx">
                 </div>
                 <div class="offer-body">
@@ -254,7 +273,7 @@
 
             <!-- 6. Charity -->
             <div class="offer-row reverse fade-in">
-                <div class="offer-media floating-element">
+                <div class="offer-media">
                     <img loading="lazy" decoding="async" src="{{ asset('assets/buy-donate-charity.jpg') }}" alt="Buy and donate to charity through Tuwanx">
                 </div>
                 <div class="offer-body">
