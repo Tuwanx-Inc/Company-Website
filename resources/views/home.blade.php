@@ -26,7 +26,7 @@
 @endsection
 
 @section('mobile-menu')
-    <div class="px-6 pt-24 pb-10 min-h-full flex flex-col">
+    <div class="px-6 pt-24 pb-12">
         <nav class="flex flex-col divide-y divide-gray-100">
             <a href="#home" class="mm-link">Home<i class="fas fa-arrow-right mm-arrow"></i></a>
             <a href="#marketplace" class="mm-link">Explore<i class="fas fa-arrow-right mm-arrow"></i></a>
@@ -37,16 +37,16 @@
             <a href="#download" class="mm-link">Download<i class="fas fa-arrow-right mm-arrow"></i></a>
         </nav>
 
-        <div class="mt-auto pt-10 flex flex-col gap-3">
+        <div class="mt-8 flex flex-col gap-3">
             <a href="#download" class="btn-gold w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Sign Up</a>
             <a href="#download" class="btn-outline w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Log In</a>
         </div>
 
-        <div class="flex justify-center gap-7 pt-8 text-xl text-gray-400">
-            <a href="https://www.instagram.com/tuwanxinc/" target="_blank" rel="noopener" aria-label="Tuwanx on Instagram" class="hover:text-tuwanx-gold transition"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@tuwanxinc" target="_blank" rel="noopener" aria-label="Tuwanx on TikTok" class="hover:text-tuwanx-gold transition"><i class="fab fa-tiktok"></i></a>
-            <a href="https://x.com/tuwanxapp" target="_blank" rel="noopener" aria-label="Tuwanx on X" class="hover:text-tuwanx-gold transition"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/tuwanx/" target="_blank" rel="noopener" aria-label="Tuwanx on LinkedIn" class="hover:text-tuwanx-gold transition"><i class="fab fa-linkedin-in"></i></a>
+        <div class="flex items-center justify-center gap-4 mt-8">
+            <a href="https://www.instagram.com/tuwanxinc/" target="_blank" rel="noopener" aria-label="Tuwanx on Instagram" class="mm-social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@tuwanxinc" target="_blank" rel="noopener" aria-label="Tuwanx on TikTok" class="mm-social"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/tuwanxapp" target="_blank" rel="noopener" aria-label="Tuwanx on X" class="mm-social"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/tuwanx/" target="_blank" rel="noopener" aria-label="Tuwanx on LinkedIn" class="mm-social"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
 @endsection

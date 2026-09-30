@@ -131,6 +131,12 @@
         .mm-link:hover, .mm-link:active { color: #D4AF37; padding-left: 0.5rem; }
         .mm-arrow { font-size: .8rem; color: #D4AF37; opacity: 0; transform: translateX(-6px); transition: all .2s ease; }
         .mm-link:hover .mm-arrow, .mm-link:active .mm-arrow { opacity: 1; transform: translateX(0); }
+        .mm-social {
+            width: 44px; height: 44px; border-radius: 9999px;
+            border: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center;
+            color: #6b7280; font-size: 1.05rem; transition: all .2s ease;
+        }
+        .mm-social:hover { background: #D4AF37; border-color: #D4AF37; color: #fff; transform: translateY(-2px); }
     </style>
     @yield('styles')
 </head>
@@ -169,23 +175,23 @@
         
         <!-- Mobile Menu -->
         <div class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-40 md:hidden overflow-y-auto" id="mobileMenu">
-            <div class="px-6 pt-24 pb-10 min-h-full flex flex-col">
+            <div class="px-6 pt-24 pb-12">
                 <nav class="flex flex-col divide-y divide-gray-100">
                     <a href="{{ route('home') }}" class="mm-link">Home<i class="fas fa-arrow-right mm-arrow"></i></a>
                     <a href="{{ route('about') }}" class="mm-link">About<i class="fas fa-arrow-right mm-arrow"></i></a>
                     <a href="{{ route('contact') }}" class="mm-link">Contact<i class="fas fa-arrow-right mm-arrow"></i></a>
                 </nav>
 
-                <div class="mt-auto pt-10 flex flex-col gap-3">
+                <div class="mt-8 flex flex-col gap-3">
                     <a href="{{ route('home') }}#download" class="btn-gold w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Sign Up</a>
                     <a href="{{ route('home') }}#download" class="btn-outline w-full text-center px-4 py-3.5 rounded-xl font-semibold text-lg">Log In</a>
                 </div>
 
-                <div class="flex justify-center gap-7 pt-8 text-xl text-gray-400">
-                    <a href="https://www.instagram.com/tuwanxinc/" target="_blank" rel="noopener" aria-label="Tuwanx on Instagram" class="hover:text-tuwanx-gold transition"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@tuwanxinc" target="_blank" rel="noopener" aria-label="Tuwanx on TikTok" class="hover:text-tuwanx-gold transition"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://x.com/tuwanxapp" target="_blank" rel="noopener" aria-label="Tuwanx on X" class="hover:text-tuwanx-gold transition"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/tuwanx/" target="_blank" rel="noopener" aria-label="Tuwanx on LinkedIn" class="hover:text-tuwanx-gold transition"><i class="fab fa-linkedin-in"></i></a>
+                <div class="flex items-center justify-center gap-4 mt-8">
+                    <a href="https://www.instagram.com/tuwanxinc/" target="_blank" rel="noopener" aria-label="Tuwanx on Instagram" class="mm-social"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@tuwanxinc" target="_blank" rel="noopener" aria-label="Tuwanx on TikTok" class="mm-social"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://x.com/tuwanxapp" target="_blank" rel="noopener" aria-label="Tuwanx on X" class="mm-social"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/tuwanx/" target="_blank" rel="noopener" aria-label="Tuwanx on LinkedIn" class="mm-social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
