@@ -84,7 +84,7 @@
                 <div class="relative">
                     <div class="w-80 h-80 bg-tuwanx-gold/20 rounded-full absolute -top-10 -left-10 z-0"></div>
                     <div class="w-80 h-80 bg-tuwanx-gold/10 rounded-full absolute -bottom-10 -right-10 z-0"></div>
-                    <img src="{{ asset('assets/wireframe-4.png') }}" alt="Tuwanx fashion marketplace app" fetchpriority="high" decoding="async" class="relative z-10 rounded-3xl voluminous-shadow w-full max-w-md">
+                    <img src="{{ asset('assets/wireframe-4.png') }}" alt="Tuwanx fashion marketplace app" width="584" height="1128" fetchpriority="high" decoding="async" class="relative z-10 rounded-3xl voluminous-shadow w-full max-w-md">
                 </div>
             </div>
         </div>
@@ -165,7 +165,7 @@
         }
         #marketplace .offer-row:last-child { margin-bottom: 0; }
         #marketplace .offer-media { flex: 0 0 auto; width: 300px; max-width: 88%; }
-        #marketplace .offer-media img { width: 100%; height: auto; display: block; border-radius: 1.25rem; box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7); }
+        #marketplace .offer-media img { width: 100%; height: auto; aspect-ratio: 700 / 1254; display: block; border-radius: 1.25rem; box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7); }
         #marketplace .offer-body { flex: 1; max-width: 560px; }
         #marketplace .offer-label { display: inline-block; color: #D4AF37; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
         #marketplace .offer-title { color: #ffffff; font-weight: 700; font-size: 1.6rem; line-height: 1.18; margin: 0.5rem 0 0.9rem; }
