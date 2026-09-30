@@ -141,34 +141,34 @@
 
     <!-- Section 1.75: Marketplace / Explore -->
     <style>
-        #marketplace { background: #0b0b0d; }
-        /* Sticky-stacking "cards as pages": each band pins under the nav and the next scrolls up over it. */
+        /* Mobile: a clean vertical stack of cards (no sticky — clips the glow blobs). */
+        #marketplace { background: #0b0b0d; overflow: hidden; }
         #marketplace .offer-row {
-            position: sticky;
-            top: 84px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1.75rem;
-            margin-bottom: 1.75rem;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
             background: #16171d;
             border: 1px solid rgba(255, 255, 255, 0.07);
-            border-radius: 1.5rem;
-            padding: 1.75rem 1.5rem;
-            box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.85);
+            border-radius: 1.25rem;
+            padding: 1.5rem 1.25rem;
+            box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7);
         }
         #marketplace .offer-row:last-child { margin-bottom: 0; }
-        #marketplace .offer-media { flex: 0 0 auto; width: 300px; max-width: 82%; }
+        #marketplace .offer-media { flex: 0 0 auto; width: 300px; max-width: 88%; }
         #marketplace .offer-media img { width: 100%; height: auto; display: block; border-radius: 1.25rem; box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7); }
         #marketplace .offer-body { flex: 1; max-width: 560px; }
         #marketplace .offer-label { display: inline-block; color: #D4AF37; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
-        #marketplace .offer-title { color: #ffffff; font-weight: 700; font-size: 1.9rem; line-height: 1.15; margin: 0.5rem 0 1rem; }
-        #marketplace .offer-desc { color: #c7c9ce; font-size: 1.05rem; line-height: 1.65; margin-bottom: 1.4rem; }
+        #marketplace .offer-title { color: #ffffff; font-weight: 700; font-size: 1.6rem; line-height: 1.18; margin: 0.5rem 0 0.9rem; }
+        #marketplace .offer-desc { color: #c7c9ce; font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem; }
         #marketplace .offer-points { list-style: none; padding: 0; margin: 0; }
-        #marketplace .offer-points li { color: #9ca3af; font-size: 0.98rem; margin-bottom: 0.7rem; display: flex; align-items: flex-start; }
+        #marketplace .offer-points li { color: #9ca3af; font-size: 0.95rem; margin-bottom: 0.6rem; display: flex; align-items: flex-start; }
         #marketplace .offer-points li i { color: #D4AF37; margin-right: 0.7rem; margin-top: 0.28rem; font-size: 0.82rem; }
+        /* Desktop/tablet: sticky-stacking "cards as pages" (sticky needs a non-clipping ancestor). */
         @media (min-width: 768px) {
-            #marketplace .offer-row { flex-direction: row; gap: 3.5rem; padding: 3rem; align-items: center; min-height: 56vh; }
+            #marketplace { overflow: visible; }
+            #marketplace .offer-row { position: sticky; top: 84px; flex-direction: row; gap: 3.5rem; padding: 3rem; margin-bottom: 1.75rem; align-items: center; min-height: 56vh; border-radius: 1.5rem; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.85); }
             #marketplace .offer-row.reverse { flex-direction: row-reverse; }
             #marketplace .offer-title { font-size: 2.2rem; }
             #marketplace .offer-media { width: 330px; }
